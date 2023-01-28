@@ -1,0 +1,107 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Comic Neue", sans-serif;
+}
+
+body {
+  position: relative;
+  padding: 22px 50px;
+}
+
+header h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: black;
+}
+
+header div {
+  height: 15vw;
+  background: url("../img/design1_image1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.pageTitle {
+  text-align: center;
+  padding: 6px;
+  margin-bottom: 50px;
+  border: 0.5px solid lightgray;
+  border-top: none;
+  font-size: 36px;
+}
+
+nav {
+  position: absolute;
+  top: calc(3vw + 22px);
+  right: 60px;
+}
+
+nav a {
+  padding: 10px 20px;
+  background-color: rgb(78, 78, 250);
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  border: 1px solid gray;
+  border-radius: 5px;
+  box-shadow: 5px 5px 0 0 #b3b3b3;
+  margin-left: 10px;
+}
+
+nav a:hover {
+  background-color: rgb(68, 68, 207);
+}
+
+nav a[href="#"] {
+  background-color: rgb(50, 189, 50);
+}
+
+nav a[href="#"]:hover {
+  background-color: rgb(41, 151, 41);
+}
+
+.logo,
+main,
+aside {
+  display: inline-block;
+  position: absolute;
+  top: calc(25vw + 50px);
+}
+
+.logo {
+  width: 20vw;
+  left: 50px;
+}
+
+.logo img {
+  width: 200px;
+}
+
+main {
+  width: 40vw;
+  left: calc(20vw + 50px);
+}
+
+main article {
+  margin-bottom: 40px;
+}
+
+main article p {
+  text-indent: 20px;
+}
+
+aside {
+  width: 20vw;
+  right: 50px;
+}
+
+aside img {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.contact p {
+  margin-bottom: 20px;
+}
