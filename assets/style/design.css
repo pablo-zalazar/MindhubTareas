@@ -18,6 +18,10 @@ a {
   font-size: 1.5rem;
 }
 
+h4 {
+  font-size: 1.3rem;
+}
+
 p {
   font-size: 1.2rem;
 }
@@ -247,4 +251,202 @@ td {
 .rulesContainer div div.contacto {
   flex-direction: row;
   justify-content: space-between;
+}
+
+.rulesContainer .maps {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 50px;
+}
+
+.rulesContainer .maps h3 {
+  text-align: center;
+}
+
+.rulesContainer .maps > div {
+  width: 400px;
+  height: 400px;
+}
+
+.rulesContainer .maps > div * {
+  width: 100%;
+}
+
+/* ------------------ */
+
+.registration {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.registration > * {
+  max-width: 800px;
+}
+
+.registration h2 {
+  text-align: center;
+}
+
+.registration form {
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.registration .personalInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.registration .personalInfo > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.registration .personalInfo .adress > input {
+  flex-grow: 1;
+}
+
+.registration .personalInfo .adress > input[type="date"] {
+  max-width: 250px;
+}
+
+.registration .personalInfo .adress > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.registration .personalInfo .adress > div > label {
+  margin-left: 30px;
+}
+
+.registration .personalInfo .adress > div > div {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.registration .personalInfo .grade label {
+  margin-right: 20px;
+}
+
+.registration .personalInfo .grade label:nth-of-type(n + 2) {
+  margin-left: 5px;
+}
+
+.registration .personalInfo .grade label:nth-of-type(n + 3) {
+  font-size: 0.9rem;
+  align-self: flex-start;
+}
+
+.registration .closestSchool {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.registration .closestSchool select {
+  padding-left: 5px;
+  font-size: 1rem;
+  width: 300px;
+  outline: none;
+  border-radius: 5px;
+}
+
+.registration .closestSchool select option {
+  margin-bottom: 1px;
+}
+
+.registration .selectPosition {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.registration .uniform {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.registration .permission {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.registration .columns {
+  display: flex;
+  gap: 10px;
+}
+
+.registration .columns .column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+input {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+input[type="text"],
+input[type="date"] {
+  border: none;
+  background-color: transparent;
+  flex-grow: 1;
+  border-bottom: 1px solid black;
+  outline: none;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  border: 1px solid #000;
+  padding: 6px;
+  -webkit-appearance: none;
+}
+
+input[type="radio"]:checked,
+input[type="checkbox"]:checked {
+  background-color: #6e6bfd;
+  background-size: 9px 9px;
+}
+
+.marginLeft {
+  margin-left: 20px;
+}
+
+input[type="submit"] {
+  width: 100px;
+  font-size: 18px;
+  padding: 5px 0;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 5px 5px #999;
+  font-weight: 700;
+}
+
+form input[type="submit"]:hover {
+  background-color: lightgray;
+}
+
+form input[type="submit"]:active {
+  background-color: lightgray;
+  box-shadow: 3px 3px #666;
+  transform: translateY(4px);
 }
